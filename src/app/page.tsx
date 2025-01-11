@@ -30,9 +30,9 @@ export default function Home() {
       setStatus('success')
       setMessage('Thank you for signing up! Check your email for your printable game copy.')
       setEmail('')
-    } catch (error: any) {
+    } catch (error) {
       setStatus('error')
-      setMessage(error.message || 'Something went wrong. Please try again.')
+      setMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again.')
     }
   }
 
@@ -94,6 +94,10 @@ export default function Home() {
                 )}
               </form>
             </div>
+
+            <p className="text-xl text-gray-200 mb-8">
+              Embark on an interstellar journey in this thrilling board game of space exploration
+            </p>
           </div>
         </div>
 

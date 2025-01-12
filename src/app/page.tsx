@@ -115,13 +115,13 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-8">The Premise</h2>
             <p className="text-xl text-gray-200 mb-6">
-              The 20 most populous world cities have launched into the cosmos, each racing to claim humanity's new home: Kepler-452b.
+              The 20 most populous world cities have launched into the cosmos, each racing to claim humanity&apos;s new home: Kepler-452b.
             </p>
             <p className="text-xl text-gray-200 mb-6">
-              Rising temperatures have rendered our planet unlivable, but humanity always finds a way. In the twilight of Earth's habitability, this is humanities greatest challenge yet.
+              Rising temperatures have rendered our planet unlivable, but humanity always finds a way. In the twilight of Earth&apos;s habitability, this is humanities greatest challenge yet.
             </p>
             <p className="text-xl text-gray-200">
-              In Race to Kepler, you'll lead one of these ambitious city-states in a high-stakes interstellar competition. Recruit elite crew members, bid for powerful Titans, and generate the energy needed to power your ship. Your mission: be the first to reach and colonize our species' last hope for survival.
+              In Race to Kepler, you&apos;ll lead one of these ambitious city-states in a high-stakes interstellar competition. Recruit elite crew members, bid for powerful Titans, and generate the energy needed to power your ship. Your mission: be the first to reach and colonize our species&apos; last hope for survival.
             </p>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">High Player Interaction</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Interactive</h3>
               <p className="text-gray-300">
                 Bid for Titan cards, which increases player interaction & reduces the randomness of trade row buying.
               </p>
@@ -166,7 +166,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Highly Replayable</h3>
               <p className="text-gray-300">
-                Create variance from game to game with new puzzles to work through with different City cards.
+                Create variance from game to game by choosing between one of twenty different City cards, each with unique passive and active abilities.
               </p>
             </div>
           </div>

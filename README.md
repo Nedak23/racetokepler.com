@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Race to Kepler
 
-## Getting Started
+A website for the upcoming board game "Race to Kepler" - a spacefaring deckbuilding adventure launching in 2025.
 
-First, run the development server:
+## About the Game
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Race to Kepler is a strategic deckbuilding game where players lead one of Earth's 20 most populous cities in a race to colonize humanity's new home: Kepler-452b. As rising temperatures render Earth uninhabitable, each city-state launches into the cosmos, competing to be the first to reach and colonize our species' last hope.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Easy to Learn**: Color-coded card classes allow beginners to focus on single-type strategies while advanced players can explore powerful cross-class combinations
+- **High Player Interaction**: Unique bidding system for powerful Titan cards reduces randomness and increases player engagement
+- **Highly Replayable**: 20 different city-states to choose from, each with unique passive and active abilities
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Game Details
 
-## Learn More
+- 2-4 Players
+- 45-60 Minutes
+- Ages 10+
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Mailchimp API

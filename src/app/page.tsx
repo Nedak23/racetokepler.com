@@ -100,6 +100,17 @@ export default function Home() {
                   </div>
                 )}
               </form>
+
+              {/* Card Sample Image */}
+              <div className="mt-12 relative w-full max-w-lg mx-auto">
+                <Image
+                  src="/images/CardSample.png"
+                  alt="Sample of Race to Kepler cards showing different card types"
+                  width={500}
+                  height={300}
+                  className="rounded-lg"
+                />
+              </div>
             </div>
           </div>
         </div>

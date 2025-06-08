@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-slate-900/80 backdrop-blur-sm fixed w-full z-50">
+    <nav className="bg-black/80 backdrop-blur-sm fixed w-full z-50 border-b border-teal-700/20">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-white font-bold text-xl">
@@ -16,20 +16,20 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/about" className="text-gray-300 hover:text-golden-400 transition-colors">
               About
             </Link>
-            <Link href="/rules" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/rules" className="text-gray-300 hover:text-golden-400 transition-colors">
               Rules
             </Link>
-            <Link href="/buy" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/buy" className="text-gray-300 hover:text-coral-400 transition-colors">
               Where to Buy
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-300 hover:text-white"
+            className="md:hidden text-gray-300 hover:text-golden-400"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -56,21 +56,21 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 href="/about"
-                className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
+                className="block px-3 py-2 text-gray-300 hover:text-golden-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/rules"
-                className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
+                className="block px-3 py-2 text-gray-300 hover:text-golden-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Rules
               </Link>
               <Link
                 href="/buy"
-                className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
+                className="block px-3 py-2 text-gray-300 hover:text-coral-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Where to Buy

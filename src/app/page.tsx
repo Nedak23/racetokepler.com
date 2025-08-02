@@ -60,7 +60,7 @@ export default function Home() {
               Race to Kepler
             </h1>
             <p className="text-2xl text-gray-300 mb-4">A Spacefaring Deckbuilding Game</p>
-            <p className="text-lg text-golden-400 mb-4">Coming in 2025</p>
+            <p className="text-lg text-golden-400 mb-4">Coming in October, 2025</p>
             <div className="flex justify-center gap-8 text-gray-300 text-sm mb-8">
               <span>2-4 Players</span>
               <span>45-60 Minutes</span>

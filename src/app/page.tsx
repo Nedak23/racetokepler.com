@@ -102,15 +102,31 @@ export default function Home() {
               </form>
             </div>
 
+            {/* How to Play Video */}
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-white mb-6">How to Play</h2>
+              <div className="relative w-full max-w-4xl mx-auto">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
+                  <iframe
+                    src="https://www.youtube.com/embed/hBYRWf-QaTs"
+                    title="Race to Kepler - How to Play"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
             {/* Box Art */}
             <div className="mb-12 flex justify-center">
               <div className="relative">
                 <Image
-                  src="/images/BoxArt.jpg"
+                  src="/images/BoxArt.png"
                   alt="Race to Kepler box art showing spaceships racing toward a bright light against a red cosmic background"
                   width={400}
                   height={500}
-                  className="rounded-lg shadow-2xl border-2 border-teal-700/30"
                   priority
                 />
               </div>

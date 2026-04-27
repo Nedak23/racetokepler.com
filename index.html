@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Race to Kepler — A Deck-Building Space Adventure | Conduit Games</title>
+  <meta name="description" content="Earth is finished. Four classes. Twenty city-ships. One race to Kepler-452b. A deck-building, bidding, engine-building board game for 2–4 players.">
+  <meta property="og:title" content="Race to Kepler">
+  <meta property="og:description" content="Four classes. Twenty city-ships. One race to Kepler-452b.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.racetokepler.com/">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.bunny.net/css?family=cinzel:500,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="#top" aria-label="Conduit Games — home">
+      <img src="assets/images/logo-conduit.png" alt="Conduit Games">
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <div class="site-nav__dropdown">
+        <button class="site-nav__link site-nav__trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="primary-menu">
+          Race to Kepler <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <ul class="site-nav__menu" id="primary-menu" role="menu">
+          <li role="none"><a role="menuitem" href="#game">The Game</a></li>
+          <li role="none"><a role="menuitem" href="#features">Gameplay Features</a></li>
+          <li role="none"><a role="menuitem" href="#classes">Classes</a></li>
+          <li role="none"><a role="menuitem" href="#resources">Resources</a></li>
+        </ul>
+      </div>
+      <a href="#contact" class="site-nav__link">Contact</a>
+    </nav>
+
+    <ul class="site-socials" aria-label="Social">
+      <li><a href="#" aria-label="Discord" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.3 4.5A18.3 18.3 0 0 0 15.8 3l-.2.4a17 17 0 0 0-7.2 0L8.2 3a18.3 18.3 0 0 0-4.5 1.5C1 8.6.4 12.5.7 16.4a18.5 18.5 0 0 0 5.5 2.8l1.2-1.7a11 11 0 0 1-2-1l.5-.3a13 13 0 0 0 11.2 0l.5.3a11 11 0 0 1-2 1l1.2 1.7a18.5 18.5 0 0 0 5.5-2.8c.4-4.5-.5-8.4-1.9-11.9ZM8.5 14.5c-1.1 0-2-1.1-2-2.4s.9-2.4 2-2.4 2 1.1 2 2.4-.9 2.4-2 2.4Zm7 0c-1.1 0-2-1.1-2-2.4s.9-2.4 2-2.4 2 1.1 2 2.4-.9 2.4-2 2.4Z"/></svg>
+      </a></li>
+      <li><a href="#" aria-label="YouTube" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2C.5 9.1.5 12 .5 12s0 2.9.5 4.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8ZM9.8 15.4V8.6L15.5 12l-5.7 3.4Z"/></svg>
+      </a></li>
+      <li><a href="#" aria-label="Instagram" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5a4 4 0 0 1 1.5 1 4 4 0 0 1 1 1.5c.2.4.4 1 .5 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2a4 4 0 0 1-1 1.5 4 4 0 0 1-1.5 1c-.4.2-1 .4-2.2.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5a4 4 0 0 1-1.5-1 4 4 0 0 1-1-1.5c-.2-.4-.4-1-.5-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2a4 4 0 0 1 1-1.5 4 4 0 0 1 1.5-1c.4-.2 1-.4 2.2-.5 1.3-.1 1.7-.1 4.9-.1ZM12 0C8.7 0 8.3 0 7 .1 5.7.2 4.9.4 4.1.7a6.2 6.2 0 0 0-2.3 1.5A6.2 6.2 0 0 0 .3 4.5C0 5.3-.2 6.1-.3 7.4-.4 8.7-.4 9.1-.4 12.4s0 3.7.1 5c.1 1.3.3 2.1.6 2.9a6.2 6.2 0 0 0 1.5 2.3 6.2 6.2 0 0 0 2.3 1.5c.8.3 1.6.5 2.9.6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.1-.3 2.9-.6a6.2 6.2 0 0 0 2.3-1.5 6.2 6.2 0 0 0 1.5-2.3c.3-.8.5-1.6.6-2.9.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.1-.6-2.9A6.2 6.2 0 0 0 21.9 2.2 6.2 6.2 0 0 0 19.6.7C18.8.4 18 .2 16.7.1 15.4 0 15 0 11.7 0h.3Zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4Zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.8-10.4a1.4 1.4 0 1 0-2.8 0 1.4 1.4 0 0 0 2.8 0Z" transform="translate(.4)"/></svg>
+      </a></li>
+      <li><a href="#" aria-label="BoardGameGeek" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2.2a7.8 7.8 0 0 1 7.8 7.8 7.8 7.8 0 0 1-7.8 7.8A7.8 7.8 0 0 1 4.2 12 7.8 7.8 0 0 1 12 4.2Zm-.2 2.1-1.5 4.6H5.5l3.8 2.9-1.4 4.6 3.9-2.8 3.9 2.8-1.4-4.6 3.8-2.9h-4.8L11.8 6.3Z"/></svg>
+      </a></li>
+      <li><a href="https://www.kickstarter.com/projects/conduitgames/race-to-kepler" aria-label="Kickstarter" rel="noopener" target="_blank">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M5 3h4v7.1L14.3 3H19l-6.2 8.6L19 21h-4.8L9 13v8H5V3Z"/></svg>
+      </a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO: parallax -->
+  <section class="hero" data-parallax aria-label="Race to Kepler">
+    <div class="hero__layer hero__layer--far" data-layer data-speed="0.14" style="background-image:url(assets/images/hero-bg-wide.jpg)"></div>
+    <div class="hero__layer hero__layer--stars" data-layer data-speed="0.32" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <img class="hero__wordmark" src="assets/images/logo-wordmark.png" alt="Race to Kepler — A Deck-Building Space Adventure" data-layer data-speed="-0.12">
+      <p class="hero__tag">A deck-building space adventure for 2–4 players · 40–80 min · Ages 12+</p>
+      <a class="btn btn--primary hero__cta" href="https://www.kickstarter.com/projects/conduitgames/race-to-kepler" target="_blank" rel="noopener">Back on Kickstarter</a>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- CAMPAIGN BANNER -->
+  <section class="banner" aria-label="Live campaign">
+    <div class="banner__inner">
+      <p>
+        <strong>Live now on Kickstarter.</strong>
+        Back the campaign to secure a copy of <em>Race to Kepler</em>, plus stretch goals, deluxe upgrades, and crew add-ons.
+      </p>
+      <a class="btn btn--primary" href="https://www.kickstarter.com/projects/conduitgames/race-to-kepler" target="_blank" rel="noopener">Back now →</a>
+    </div>
+  </section>
+
+  <!-- MAILING LIST -->
+  <section class="mailing" id="contact" aria-label="Mailing list">
+    <div class="mailing__inner">
+      <h2 class="mailing__title">Get updates from Conduit Games</h2>
+      <p class="mailing__sub">Launch dates, new factions, playtest invites, and behind-the-scenes art. Low volume. Easy unsubscribe.</p>
+      <form class="mailing__form" action="#" method="post" novalidate>
+        <label class="visually-hidden" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@starport.space" required>
+        <button type="submit" class="btn btn--primary">Join the crew</button>
+      </form>
+      <p class="mailing__toast" role="status" aria-live="polite" hidden>Thanks — you're on the list.</p>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video" aria-label="How to play">
+    <div class="video__inner">
+      <div class="video__frame">
+        <iframe
+          src="https://www.youtube.com/embed/1CHGjYlZjug?rel=0&modestbranding=1"
+          title="Race to Kepler — How to Play"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOARD LAYOUT HERO IMAGE -->
+  <section class="showcase showcase--board" id="game" aria-label="Board layout">
+    <div class="showcase__image">
+      <img src="assets/images/board-layout.jpg" alt="Race to Kepler board spread across a table: city-ships, crew decks, Titan cards, and the star chart to Kepler-452b" loading="lazy">
+    </div>
+    <div class="showcase__caption">
+      <p>Four decks. Twenty city-ships. One star chart. Ready your table.</p>
+    </div>
+  </section>
+
+  <!-- PITCH PARAGRAPH -->
+  <section class="pitch" aria-label="About the game">
+    <div class="pitch__inner">
+      <p>
+        <strong>Race to Kepler</strong> is a deck-building board game about the last ships out of a dying Earth.
+        World powers have hollowed their cities into starcraft and set course for <em>Kepler-452b</em>.
+        Hire crews from four classes, keep your ship's energy burning, and bid against rivals for the ancient Titans that bend the rules of the race.
+        First ship to cross twenty star systems wins — and not a moment before.
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonial" aria-label="What players say">
+    <div class="testimonial__inner">
+      <img src="assets/images/testimonial-liam.png" alt="Testimonial from Liam Halliburton — Pokémon Senior World Champion 2022" loading="lazy">
+      <img src="assets/images/testimonial-2.png" alt="Player testimonial about Race to Kepler" loading="lazy">
+    </div>
+  </section>
+
+  <!-- GAMEPLAY FEATURES -->
+  <section class="features" id="features" aria-label="Gameplay features">
+    <header class="section-heading">
+      <span class="section-heading__eyebrow">&lt; Transmission · 01 &gt;</span>
+      <h2 class="section-heading__title">Gameplay Features</h2>
+    </header>
+
+    <div class="feature-row feature-row--showcase">
+      <div class="feature-row__art" data-parallax-section data-speed="0.06">
+        <img src="assets/images/city-showcase.jpg" alt="Asymmetric city-ships — twenty hollowed-out cities, each with its own trait deck" loading="lazy">
+      </div>
+      <div class="feature-row__art feature-row__art--portrait" data-parallax-section data-speed="0.04">
+        <img src="assets/images/city-singapore.jpg" alt="Singapore city-ship concept art" loading="lazy">
+      </div>
+    </div>
+
+    <div class="feature-row feature-row--showcase feature-row--reverse">
+      <div class="feature-row__art" data-parallax-section data-speed="0.06">
+        <img src="assets/images/titan-showcase.jpg" alt="Bid for the Titans — ancient allies bend the rules in your favor" loading="lazy">
+      </div>
+      <div class="feature-row__art feature-row__art--portrait" data-parallax-section data-speed="0.04">
+        <img src="assets/images/titan-amplify.jpg" alt="Amplify Titan card art" loading="lazy">
+      </div>
+    </div>
+
+    <div class="feature-row feature-row--full">
+      <div class="feature-row__art feature-row__art--wide">
+        <img src="assets/images/gameplay-3.jpg" alt="Race to Kepler in play — ships, crews, and the chart to Kepler-452b" loading="lazy">
+      </div>
+      <div class="feature-row__copy feature-row__copy--overlay">
+        <h3>Race Across Twenty Systems</h3>
+        <p>Victory isn't vague. The chart is twenty systems long and the first ship to Kepler takes the prize. Every jump matters. Falling behind is survivable — up to a point. Falling two jumps behind is not.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTIONS -->
+  <section class="factions" id="classes" aria-label="Crew classes">
+    <header class="section-heading">
+      <span class="section-heading__eyebrow">&lt; Transmission · 02 &gt;</span>
+      <h2 class="section-heading__title">Classes</h2>
+    </header>
+
+    <div class="faction">
+      <div class="faction__art" data-parallax-section data-speed="0.05">
+        <img src="assets/images/faction-engineers.jpg" alt="Engineers" loading="lazy">
+      </div>
+      <div class="faction__copy">
+        <img class="faction__icon" src="assets/images/icon-engineers.png" alt="" aria-hidden="true">
+        <h3>Engineers</h3>
+        <p>The ones who keep the lights on. Engineers are your ship's nervous system — they route energy, stabilize the reactor, and make sure every upgrade you bolt on actually fires. On the table, they're the class that scales: each Engineer you add multiplies the work of the rest.</p>
+        <p class="faction__style"><strong>Choose the Engineers</strong> if you enjoy tempo, tight combos, and decks that only get stronger turn over turn.</p>
+      </div>
+    </div>
+
+    <div class="faction faction--reverse">
+      <div class="faction__art" data-parallax-section data-speed="0.05">
+        <img src="assets/images/faction-miners.jpg" alt="Miners" loading="lazy">
+      </div>
+      <div class="faction__copy">
+        <img class="faction__icon" src="assets/images/icon-miners.png" alt="" aria-hidden="true">
+        <h3>Miners</h3>
+        <p>Grubby hands, full pockets. Miners pry the money out of whatever's in front of them — crew, asteroid, abandoned station. They're slow to start and impossible to catch once they're up to speed. The economic class; pick them when you want to out-bid the whole table for every Titan on the market.</p>
+        <p class="faction__style"><strong>Choose the Miners</strong> if you enjoy the long snowball, deep setups, and out-bidding the whole table once your engine is humming.</p>
+      </div>
+    </div>
+
+    <div class="faction">
+      <div class="faction__art" data-parallax-section data-speed="0.05">
+        <img src="assets/images/faction-scientists.jpg" alt="Scientists" loading="lazy">
+      </div>
+      <div class="faction__copy">
+        <img class="faction__icon" src="assets/images/icon-scientists.png" alt="" aria-hidden="true">
+        <h3>Scientists</h3>
+        <p>The ones who read the rules and then rewrite them. Scientists turn discards into draws, turn Titans into tech, and turn whole turns inside-out. Nothing in <em>Race to Kepler</em> is quite as satisfying as a Scientist combo that nobody at the table saw coming.</p>
+        <p class="faction__style"><strong>Choose the Scientists</strong> if you enjoy card manipulation, tech rushes, and pulling a winning plan together from the bottom of the deck.</p>
+      </div>
+    </div>
+
+    <div class="faction faction--reverse">
+      <div class="faction__art" data-parallax-section data-speed="0.05">
+        <img src="assets/images/faction-smugglers.jpg" alt="Smugglers" loading="lazy">
+      </div>
+      <div class="faction__copy">
+        <img class="faction__icon" src="assets/images/icon-smugglers.png" alt="" aria-hidden="true">
+        <h3>Smugglers</h3>
+        <p>Working the cracks between the rules. Smugglers disrupt, cut, steal, and disappear. A full Smuggler deck is a series of small insults that add up to somebody else losing the race. Not the easiest class to teach — but if you want to be the table's problem, this is your crew.</p>
+        <p class="faction__style"><strong>Choose the Smugglers</strong> if you enjoy hidden plays, targeted disruption, and forcing every opponent to change their plan mid-turn.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section class="resources" id="resources" aria-label="Resources">
+    <header class="section-heading">
+      <span class="section-heading__eyebrow">&lt; Transmission · 03 &gt;</span>
+      <h2 class="section-heading__title">Resources</h2>
+    </header>
+    <div class="resources__grid">
+      <a class="resource-card" href="https://www.kickstarter.com/projects/conduitgames/race-to-kepler" target="_blank" rel="noopener">
+        <span class="resource-card__eyebrow">PDF · Kickstarter</span>
+        <span class="resource-card__title">Download the Rulebook</span>
+        <span class="resource-card__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="resource-card" href="https://www.racetokepler.com/" target="_blank" rel="noopener">
+        <span class="resource-card__eyebrow">racetokepler.com</span>
+        <span class="resource-card__title">Print &amp; Play + Strategy</span>
+        <span class="resource-card__arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="resource-card" href="https://app.merchantsofplay.com/games/race-to-kepler" target="_blank" rel="noopener">
+        <span class="resource-card__eyebrow">Online</span>
+        <span class="resource-card__title">Play on Merchants of Play</span>
+        <span class="resource-card__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <a class="site-footer__brand" href="#top" aria-label="Conduit Games">
+      <img src="assets/images/logo-conduit.png" alt="Conduit Games">
+    </a>
+
+    <ul class="site-footer__socials" aria-label="Social">
+      <li><a href="#" aria-label="Discord" rel="noopener">Discord</a></li>
+      <li><a href="#" aria-label="YouTube" rel="noopener">YouTube</a></li>
+      <li><a href="#" aria-label="Instagram" rel="noopener">Instagram</a></li>
+      <li><a href="#" aria-label="BoardGameGeek" rel="noopener">BGG</a></li>
+      <li><a href="https://www.kickstarter.com/projects/conduitgames/race-to-kepler" rel="noopener" target="_blank">Kickstarter</a></li>
+    </ul>
+
+    <p class="site-footer__fine">© 2026 Conduit Games · <em>Race to Kepler</em> is a trademark of Conduit Games.</p>
+  </div>
+</footer>
+
+<script src="assets/js/parallax.js?v=7" defer></script>
+</body>
+</html>

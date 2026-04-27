@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+.vscode/
+.idea/
+node_modules/
+dist/
+
+# Dev screenshots and tooling artifacts
+.playwright-mcp/
+/kepler-*.jpeg
+/ks-*.jpeg

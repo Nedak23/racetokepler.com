@@ -63,7 +63,9 @@
 
     layers.forEach((el) => {
       const speed = parseFloat(el.dataset.speed || '0');
-      const shift = (y - heroTop) * speed;
+      // Use scrollY * speed so shift is 0 at page top. The old (scrollY - heroDocTop) * speed
+      // pulled layers upward on load (negative shift) and hid them under the sticky header.
+      const shift = y * speed;
       el.style.setProperty('--shift', `${shift}px`);
       const scale = 1 + progress * 0.05;
       el.style.setProperty('--scale', scale.toFixed(3));
@@ -102,6 +104,28 @@
   } else {
     revealables.forEach((el) => el.classList.add('is-visible'));
   }
+
+  // YouTube lite-embed: click thumbnail → swap in autoplaying iframe.
+  // (Falls back to navigating to youtube.com if JS fails.)
+  document.querySelectorAll('.video__thumb[data-youtube-id]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = el.dataset.youtubeId;
+      if (!id) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1&modestbranding=1`;
+      iframe.title = 'Race to Kepler — How to Play';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.frameBorder = '0';
+      iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+      const frame = document.createElement('div');
+      frame.className = 'video__frame';
+      frame.appendChild(iframe);
+      el.parentNode.replaceChild(frame, el);
+    });
+  });
 
   // Mailing list: show a fake thanks-toast on submit so the first pass has a working UX.
   const form = document.querySelector('.mailing__form');

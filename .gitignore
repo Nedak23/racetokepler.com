@@ -9,3 +9,4 @@ dist/
 .playwright-mcp/
 /kepler-*.jpeg
 /ks-*.jpeg
+.vercel

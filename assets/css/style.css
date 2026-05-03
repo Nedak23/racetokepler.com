@@ -1023,26 +1023,29 @@ h2 {
   border-radius: 0;
   box-shadow: none;
 }
+.feature-row--full-right .feature-row__art--wide img {
+  transform: translateX(-150px);
+}
 .feature-row--full .feature-row__art--wide::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(5, 9, 26, 0.90) 0%,
-    rgba(5, 9, 26, 0.68) 40%,
-    rgba(5, 9, 26, 0.38) 58%,
-    rgba(5, 9, 26, 0) 78%
+    rgba(5, 9, 26, 1) 0%,
+    rgba(5, 9, 26, 1) 30%,
+    rgba(5, 9, 26, .8) 48%,
+    rgba(5, 9, 26, 0) 88%
   );
   pointer-events: none;
 }
 .feature-row--full-right .feature-row__art--wide::after {
   background: linear-gradient(
     270deg,
-    rgba(5, 9, 26, 0.90) 0%,
-    rgba(5, 9, 26, 0.68) 40%,
-    rgba(5, 9, 26, 0.38) 58%,
-    rgba(5, 9, 26, 0) 78%
+    rgba(5, 9, 26, 1) 0%,
+    rgba(5, 9, 26, 1) 30%,
+    rgba(5, 9, 26, .9) 58%,
+    rgba(5, 9, 26, 0) 88%
   );
 }
 .feature-row__copy--overlay {

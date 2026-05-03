@@ -257,15 +257,28 @@ a:hover { color: var(--gold-2); }
   transform: translate3d(0, var(--shift, 0), 0) scale(var(--scale, 1));
 }
 .hero__layer--far {
-  z-index: -3;
+  z-index: -40;
   filter: saturate(0.85);
 }
+.hero__layer--deepfield {
+  z-index: -30;
+  /* Was 0.15 — practically invisible combined with vignette; tune after checking repeat tiles */
+  opacity: 0.45;
+  overflow: hidden;
+  /* Tiles: bg URL is inline on element (same path style as hero--far) so it resolves from index.
+     Tweaks: smaller --deepfield-tile-width = tighter repeat */
+  background-repeat: repeat;
+  /* Larger values = bigger repeat tiles (= each Webpage-background-2 cell drawn larger) */
+  --deepfield-tile-width: clamp(336px, 38.5vw, 672px);
+  background-size: var(--deepfield-tile-width) auto;
+  background-position: 0 0;
+}
 .hero__layer--mid {
-  z-index: -2;
+  z-index: -30;
   filter: blur(calc((var(--blur-base, 14px)) - var(--shift, 0px) * 0.06)) brightness(0.78);
 }
 .hero__layer--stars {
-  z-index: -1;
+  z-index: -22;
   inset: 0;
   background-image:
     radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.7) 50%, transparent 51%),
@@ -282,13 +295,16 @@ a:hover { color: var(--gold-2); }
 .hero::before {
   content: "";
   position: absolute; inset: 0;
-  z-index: -1;
+  /* Between deepfield (-30) and CSS star sparkles (-22) */
+  z-index: -25;
   background:
     radial-gradient(ellipse at 50% 40%, rgba(7, 12, 31, 0) 0%, rgba(7, 12, 31, 0.08) 75%, rgba(7, 12, 31, 0.14) 100%),
     linear-gradient(180deg, rgba(7, 12, 31, 0.025) 0%, rgba(7, 12, 31, 0.055) 100%);
   pointer-events: none;
 }
 .hero__content {
+  position: relative;
+  z-index: 2;
   text-align: center;
   max-width: 860px;
   transform: translate3d(0, var(--shift, 0), 0);
@@ -347,6 +363,10 @@ a:hover { color: var(--gold-2); }
   }
   /* Cover art: keep heads/helmets in frame; desktop stays default center */
   .hero__layer--far {
+    background-position: center top;
+  }
+  .hero__layer--deepfield {
+    --deepfield-tile-width: clamp(264px, 58vw, 504px);
     background-position: center top;
   }
   .hero__content {
@@ -1240,7 +1260,7 @@ h2 {
   right: 0;
   z-index: 3;
   background: transparent;
-  padding: 28px var(--page-x) 32px;
+  padding: 2px var(--page-x) 32px;
   display: flex;
   flex-direction: column;
   align-items: center;

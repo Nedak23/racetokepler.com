@@ -1,5 +1,7 @@
 # Race to Kepler — landing page
 
+**Repository:** [github.com/Nedak23/racetokepler.com](https://github.com/Nedak23/racetokepler.com)
+
 One-page marketing site for *Race to Kepler*, a deck-building space board game from Conduit Games.
 
 ## Preview locally
@@ -8,9 +10,7 @@ Open `index.html` directly in your browser — no server needed.
 
 ## Deploy
 
-Hosted on Vercel at **https://rome-v1-beta.vercel.app** under the `camp-projects/rome-v1` project.
-
-To deploy the latest changes:
+Vercel deploys from this GitHub repo. After connecting the repo in the Vercel dashboard, merges to your production branch will pick up commits automatically unless you deploy manually:
 
 ```bash
 npx vercel@latest --prod --yes
